@@ -571,7 +571,7 @@ function aplicarGolpeRodillo(impacto) {
     const dirTangencial = new THREE.Vector3(radioVector.z, 0, -radioVector.x).normalize();
     dirTangencial.multiplyScalar(sentido);
 
-    // multiplicamos ese vector perpendicular por la fuerza del rodillo:
+    // Multiplicamos ese vector perpendicular por la fuerza del rodillo:
     velEmpuje.copy(dirTangencial).multiplyScalar(fuerzaEmpujeRodillo);
 
     // El rodillo también nos levantará un poco por los aires:
