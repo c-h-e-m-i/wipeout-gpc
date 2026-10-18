@@ -150,7 +150,7 @@ export function crearPista() {
         largoSalida, ySalida, anchoSalida / 2,
         'tras', matAzul));
 
-    escena.add(cubo(largoRampa, grosorSalida + alturaPiscina, anchoSalida * 2,
+    escena.add(cubo(largoRampa, grosorSalida * 2 + alturaPiscina, anchoSalida * 2,
         largoSalida, ySalida - altoRampa + grosorSalida, anchoSalida / 2, matAzul))
 
     // Plataforma final de rampa:
