@@ -241,6 +241,7 @@ function crearPanel() {
     <li><span>Moverse:</span> <kbd>W A S D / Flechas</kbd></li>
     <li><span>Saltar:</span> <kbd>Espacio</kbd></li>
     <li><span>Cambiar Cámara:</span> <kbd>C</kbd></li>
+    <li><span>Girar Cámara:</span> <kbd>Q / E</kbd></li>
     <li><span>Restablecer Cámara:</span> <kbd>X</kbd></li>
     <li><span>Pausar Juego:</span> <kbd>P</kbd></li>
     <li><span>Mostrar/Ocultar FPS:</span> <kbd>F</kbd></li>
