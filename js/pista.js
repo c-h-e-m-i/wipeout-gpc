@@ -118,7 +118,10 @@ export function crearPista() {
         normalScale: new THREE.Vector2(1, 1)
     });
     matCesped = new THREE.MeshStandardMaterial({
-        map: cesped
+        map: cesped,
+        polygonOffset: true,
+        polygonOffsetFactor: 1,
+        polygonOffsetUnits: 1
     });
 
     // Altura y grosor de las paredes de las piscinas:
@@ -132,15 +135,16 @@ export function crearPista() {
     const geomBase = new THREE.PlaneGeometry(dimBase, dimBase);
     const sueloBase = new THREE.Mesh(geomBase, matCesped);
     sueloBase.rotation.x = -Math.PI / 2;
-    sueloBase.position.set(0, -alturaPiscina - grosorSalida * 2, 0);
-    escena.add(sueloBase)
+    sueloBase.position.set(0, -alturaPiscina - grosorSalida - 0.03, 0);
+    sueloBase.receiveShadow = true;
+    escena.add(sueloBase);
 
     // =========================================================================
     // RAMPA DE SALIDA:
     // =========================================================================
     const largoRampa = 30, altoRampa = 12;
     const largoSalida = 12, anchoSalida = 8, ySalida = altoRampa - grosorSalida;
-    const anchoPasarela = 5
+    const anchoPasarela = 5;
 
     // Plataforma inicio de rampa:
     escena.add(cubo(largoSalida + 1, altoRampa + grosorSalida + alturaPiscina, anchoSalida * 2, -1, ySalida, anchoSalida / 2, matGris));
@@ -150,8 +154,8 @@ export function crearPista() {
         largoSalida, ySalida, anchoSalida / 2,
         'tras', matAzul));
 
-    escena.add(cubo(largoRampa, grosorSalida * 2 + alturaPiscina, anchoSalida * 2,
-        largoSalida, ySalida - altoRampa + grosorSalida, anchoSalida / 2, matAzul))
+    escena.add(cubo(largoRampa, grosorSalida + alturaPiscina, anchoSalida * 2,
+        largoSalida, ySalida - altoRampa + grosorSalida, anchoSalida / 2, matAzul));
 
     // Plataforma final de rampa:
     const finRampaX = largoSalida + largoRampa;
