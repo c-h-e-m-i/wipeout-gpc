@@ -693,7 +693,7 @@ function cambiarCamara() {
         referenciaControlesCamara.target.copy(posJugador);
         referenciaControlesCamara.target.y += desfaseLookAtY;
 
-        // Separamos la cámara hacia atrás si venimos de la vista subjetiva para no nacer dentro del cráneo:
+        // Separamos la cámara hacia atrás si venimos de la vista en 1a persona para no nacer dentro del cráneo:
         referenciaCamara.position.x = posJugador.x + Math.sin(anguloCamara) * distanciaCamara;
         referenciaCamara.position.z = posJugador.z + Math.cos(anguloCamara) * distanciaCamara;
         referenciaCamara.position.y = posJugador.y + alturaCamara;
@@ -809,7 +809,7 @@ function restablecerCamaraActiva() {
 
         referenciaControlesCamara.update();
     } else if (modoActual === 'primeraPersona') {
-        // Actualizamos de inmediato la vista subjetiva mirando al frente:
+        // Actualizamos de inmediato la vista en primera persona mirando al frente:
         camaraPrimeraPersona(referenciaCamara);
     } else {
         // En tercera persona, forzamos la colocación instantánea detrás de la espalda:
