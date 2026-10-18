@@ -493,7 +493,7 @@ export function piscina(largo, alto, ancho, grosorPared, x, y, z, materialPared,
     // Deshabilitamos las sombras de la piscina:
     piscina.traverse(function (child) {
         if (child.isMesh) {
-            child.castShadow = false;
+            child.castShadow = true;
             child.receiveShadow = false;
         }
     });
