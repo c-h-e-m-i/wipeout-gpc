@@ -143,12 +143,15 @@ export function crearPista() {
     const anchoPasarela = 5
 
     // Plataforma inicio de rampa:
-    escena.add(cubo(largoSalida + 1, altoRampa - grosorSalida, anchoSalida * 2, -1, ySalida, anchoSalida / 2, matGris));
+    escena.add(cubo(largoSalida + 1, altoRampa + grosorSalida + alturaPiscina, anchoSalida * 2, -1, ySalida, anchoSalida / 2, matGris));
 
     // Rampa:
     escena.add(cunya(largoRampa, altoRampa - grosorSalida, anchoSalida * 2,
         largoSalida, ySalida, anchoSalida / 2,
         'tras', matAzul));
+
+    escena.add(cubo(largoRampa, grosorSalida + alturaPiscina, anchoSalida * 2,
+        largoSalida, ySalida - altoRampa + grosorSalida, anchoSalida / 2, matAzul))
 
     // Plataforma final de rampa:
     const finRampaX = largoSalida + largoRampa;
