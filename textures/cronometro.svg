@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-18.08 79.163 572.105 154.79">
+  <defs>
+    <filter id="sombra-placa" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="brillo-cyan">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#00d4ff" flood-opacity="0.8"/>
+    </filter>
+    <linearGradient id="alaOscura" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#415165"/>
+      <stop offset="0.5" stop-color="#243040"/>
+      <stop offset="1" stop-color="#121822"/>
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7be5ff"/>
+      <stop offset="0.4" stop-color="#00aaff"/>
+      <stop offset="1" stop-color="#0066aa"/>
+    </linearGradient>
+    <linearGradient id="marcoCromado" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.15" stop-color="#b8c6d4"/>
+      <stop offset="0.5" stop-color="#6b7c8d"/>
+      <stop offset="0.85" stop-color="#dce5ee"/>
+      <stop offset="1" stop-color="#404c57"/>
+    </linearGradient>
+    <linearGradient id="cuerpoAzul" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4688d9"/>
+      <stop offset="0.08" stop-color="#235bb5"/>
+      <stop offset="0.5" stop-color="#153b82"/>
+      <stop offset="1" stop-color="#0d2454"/>
+    </linearGradient>
+    <linearGradient id="reflejoCristal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="vigaMetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ba2b8"/>
+      <stop offset="1" stop-color="#3c4754"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g opacity="0.95" transform="matrix(1, 0, 0, 1, -34.141824, 72.695888)">
+      <path d="M 50,94 L 85,74 L 120,94 L 155,74 L 190,94 L 225,74" fill="none" stroke="url(#vigaMetal)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 420,74 L 455,94 L 490,74 L 525,94 L 560,74" fill="none" stroke="url(#vigaMetal)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="45" y1="94" x2="565" y2="94" stroke="#252d36" stroke-width="6" stroke-linecap="round"/>
+      <line x1="45" y1="94" x2="565" y2="94" stroke="#536475" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <polygon points="85.858 104.696 195.858 104.696 195.858 124.696 75.858 124.696" fill="url(#alaOscura)" style="stroke-width: 1;"/>
+    <polygon points="375.858 104.696 470.858 104.696 485.858 124.696 375.858 124.696" fill="url(#alaOscura)" style="stroke-width: 1;"/>
+    <line x1="85.858" y1="104.696" x2="195.858" y2="104.696" stroke="#688099" stroke-width="1.5" style="stroke-width: 1.5;"/>
+    <line x1="375.858" y1="104.696" x2="470.858" y2="104.696" stroke="#688099" stroke-width="1.5" style="stroke-width: 1.5;"/>
+    <g filter="url(#brillo-cyan)" transform="matrix(1, 0, 0, 1, -34.141824, 72.695888)">
+      <polygon points="35,56 225,56 225,78 28,78" fill="url(#neonCyan)"/>
+      <polygon points="35,56 225,56 225,60 33,60" fill="#ffffff" opacity="0.6"/>
+      <polygon points="420,56 555,56 565,78 420,78" fill="url(#neonCyan)"/>
+      <polygon points="420,56 555,56 558,60 420,60" fill="#ffffff" opacity="0.6"/>
+    </g>
+    <g filter="url(#sombra-placa)" transform="matrix(1, 0, 0, 1, -34.141824, 72.695888)">
+      <path d="M 215,22 L 425,22 L 462,56 L 462,130 Q 462,132 458,132 L 218,132 Q 214,132 214,128 L 214,24 Q 214,22 218,22 Z" fill="url(#marcoCromado)"/>
+      <path d="M 219,26 L 422,26 L 456,58 L 456,127 L 219,127 Z" fill="url(#cuerpoAzul)"/>
+      <path d="M 219,26 L 422,26 L 456,58 L 453,60 L 420,29 L 222,29 Z" fill="#ffffff" opacity="0.6"/>
+      <line x1="219" y1="26" x2="219" y2="127" stroke="#061226" stroke-width="2"/>
+      <path d="M 390,127 C 410,127 420,118 438,100 C 445,92 452,86 456,84 L 456,127 Z" fill="#dce5ec"/>
+      <polygon points="219,26 422,26 438,42 219,42" fill="url(#reflejoCristal)"/>
+      <text id="texto-cronometro" x="335" y="93" text-anchor="middle" font-family="'Eurostile', 'Arial Black', sans-serif" font-weight="normal" font-size="48" letter-spacing="2" fill="#ffffff" stroke="#0a1d3b" stroke-width="2" style="white-space: pre;">00:00.0</text>
+    </g>
+  </g>
+</svg>
