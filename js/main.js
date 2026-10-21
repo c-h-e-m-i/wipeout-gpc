@@ -491,7 +491,7 @@ function crearPanelControles() {
 `;
   document.head.appendChild(estiloPanel);
 
-  // Creamos el div del panel y lo añadimos al body:
+  // Creamos el div del panel y lo añadimos al cuerpo:
   const panelControles = document.createElement('div');
   panelControles.id = 'panel-controles';
   panelControles.innerHTML = `
@@ -503,6 +503,7 @@ function crearPanelControles() {
     <li><span>Girar Cámara:</span> <kbd>Q / E</kbd></li>
     <li><span>Restablecer Cámara:</span> <kbd>X</kbd></li>
     <li><span>Pausar Juego:</span> <kbd>P</kbd></li>
+    <li><span>Reiniciar Juego:</span> <kbd>R</kbd></li>
     <li><span>Mostrar/Ocultar FPS:</span> <kbd>F</kbd></li>
     <li><span>Mostrar/Ocultar Controles:</span> <kbd>H</kbd></li>
   </ul>
