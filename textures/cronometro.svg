@@ -64,7 +64,7 @@
       <line x1="219" y1="26" x2="219" y2="127" stroke="#061226" stroke-width="2"/>
       <path d="M 390,127 C 410,127 420,118 438,100 C 445,92 452,86 456,84 L 456,127 Z" fill="#dce5ec"/>
       <polygon points="219,26 422,26 438,42 219,42" fill="url(#reflejoCristal)"/>
-      <text id="texto-cronometro" x="335" y="93" text-anchor="middle" font-family="'Eurostile', 'Arial Black', sans-serif" font-weight="normal" font-size="48" letter-spacing="2" fill="#ffffff" stroke="#0a1d3b" stroke-width="2" style="white-space: pre;">00:00.0</text>
+      <text id="texto-cronometro" x="335" y="93" text-anchor="middle" font-family="'Eurostile', 'Arial Black', sans-serif" font-weight="normal" font-size="48" letter-spacing="2" fill="#ffffff" style="white-space: pre;">00:00.0</text>
     </g>
   </g>
 </svg>
